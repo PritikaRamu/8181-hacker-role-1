@@ -1,0 +1,4 @@
+enabled: true
+max_new_tokens: 128
+max_rounds: 3
+batch_size: 1

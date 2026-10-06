@@ -1,0 +1,18 @@
+enabled: false
+max_new_tokens: 128
+relative_top: 0.1
+repetition_penalty: 1.2
+batch_size: 1          # ActLCD runs one sequence at a time (policy is per-token, per-sequence)
+# Architecture-specific: 6.7B has 32 layers total
+mature_layer: 32
+early_exit_layers: [4, 8, 12, 16]
+# Policy type: entropy (heuristic, no training needed) or bcq (trained RL agent).
+#   entropy: apply DoLa contrast whenever mature-layer Shannon entropy > entropy_threshold (nats).
+#            Good starting range: 1.0–2.0.  No policy_path required.
+#   bcq:     load BCQAgent checkpoint from policy_path.
+#            state_dim for this config = (11 + 1) × 5 × 2 = 120.
+#   omitted / policy_path null + no policy_type: contrast at every token (= standard DoLa).
+policy_type: entropy
+entropy_threshold: 1.0
+policy_path: null       # only needed for policy_type: bcq
+bc_threshold: 0.3       # only needed for policy_type: bcq

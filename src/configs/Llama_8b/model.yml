@@ -1,0 +1,9 @@
+id: meta-llama/Llama-3.1-8B-Instruct
+alias: llama-8b
+torch_dtype: bfloat16
+device_map: auto
+quantization:
+  load_in_4bit: true
+  bnb_4bit_compute_dtype: bfloat16
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_quant_type: nf4

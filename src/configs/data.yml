@@ -1,0 +1,15 @@
+instruction_dir: data/instruction
+package_list_dir: data/package_list
+languages: [Python, JavaScript, Rust, Ruby]
+# Which experiment tasks to run. "packages" = list-of-packages output,
+# "code" = full code generation output.
+tasks: [packages, code]
+# Set to a positive integer to cap samples per language (null = all).
+max_samples:
+  Python: 10
+  JavaScript: 10
+  Rust: 10
+  Ruby: 10
+
+output:
+  root_dir: output

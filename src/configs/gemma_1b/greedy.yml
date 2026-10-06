@@ -1,0 +1,3 @@
+enabled: true
+max_new_tokens: 128
+batch_size: 128

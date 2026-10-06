@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Results by mitigation strategy (macro-averaged over models and languages). DU = TF-IDF reference; $\mathsf{DU^c}$ = collective reference. Bold = best.}
+\label{tab:by_strategy}
+\begin{tabular}{lrrrrrrr}
+\toprule
+ & PHR$\uparrow$ & $\mathsf{DU}$ & $\mathsf{DU_P}$ & $\mathsf{DU_R}$ & $\mathsf{DU^c}$ & $\mathsf{DU^c_P}$ & $\mathsf{DU^c_R}$ \\
+\midrule
+  Baseline & 32.19 & 0.0518 & 0.1610 & 0.0357 & 0.2471 & 0.3235 & 0.2640 \\
+  Greedy & \textbf{28.27} & \textbf{0.0595} & \textbf{0.1935} & \textbf{0.0399} & \textbf{0.2700} & \textbf{0.3780} & \textbf{0.2725} \\
+  DoLA & 40.25 & 0.0429 & 0.1344 & 0.0306 & 0.1892 & 0.2548 & 0.2077 \\
+  Contrast. & 35.53 & 0.0361 & 0.1099 & 0.0233 & 0.1749 & 0.2259 & 0.1751 \\
+  Nudging & 32.79 & 0.0444 & 0.1379 & 0.0282 & 0.2128 & 0.2909 & 0.2068 \\
+  Self-refine & 28.51 & 0.0521 & 0.1581 & 0.0343 & 0.2396 & 0.3206 & 0.2388 \\
+\bottomrule
+\end{tabular}
+\end{table}

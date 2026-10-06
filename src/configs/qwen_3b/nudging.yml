@@ -1,0 +1,6 @@
+enabled: false
+max_new_tokens: 128
+batch_size: 4
+# Paired strategy: this model is the generator, guide_model steers when confidence is low.
+guide_model: qwen_3b       # must be a known alias
+top_prob_thres: 0.9

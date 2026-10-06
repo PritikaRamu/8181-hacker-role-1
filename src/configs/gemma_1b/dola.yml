@@ -1,0 +1,11 @@
+enabled: true
+max_new_tokens: 128
+repetition_penalty: 1.2
+batch_size: 4
+# early_exit_layers is passed directly as dola_layers to the HF community integration.
+# Use a list of ints for explicit layer indices, or "low" / "high" for shortcuts:
+#   "high" → upper half of layers (recommended for short-answer / package-list tasks)
+#   "low"  → lower half (better for long-form reasoning)
+# mature_layer is no longer needed — the HF implementation infers it from the model config.
+# Architecture: gemma-3-1b-it has 18 hidden layers.
+early_exit_layers: [4, 8, 12, 16]

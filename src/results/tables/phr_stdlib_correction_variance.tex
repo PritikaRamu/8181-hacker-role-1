@@ -1,0 +1,34 @@
+\begin{longtable}{@{}llrrrr@{}}
+  \caption{Micro PHR with and without standard library correction, averaged over all models. $\Delta>0$ means overestimation without the correction.}\label{tab:stdlibs-delta-micro-variance} \\
+  \toprule
+  \textbf{Lang.} & \textbf{Strategy} & \textbf{$N_{\text{gen}}$} & \textbf{PHR$_{\text{w/ std}}$ (\%)} & \textbf{PHR$_{\text{w/o std}}$ (\%)} & \textbf{$\Delta$ (pp)} \\
+  \midrule
+  \endfirsthead
+  \multicolumn{6}{c}{\tablename\ \thetable\ -- continued} \\
+  \toprule
+  \textbf{Lang.} & \textbf{Strategy} & \textbf{$N_{\text{gen}}$} & \textbf{PHR$_{\text{w/ std}}$ (\%)} & \textbf{PHR$_{\text{w/o std}}$ (\%)} & \textbf{$\Delta$ (pp)} \\
+  \midrule
+  \endhead
+  \midrule \multicolumn{6}{r}{Continued\ldots} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  \multirow{7}{*}{Python} & Vanilla & 16,583 & 22.0$_{\pm 0.67}$ & 29.0$_{\pm 0.53}$ & +7.0 \\
+   & Greedy & 15,831 & 22.0$_{\pm 0.00}$ & 29.1$_{\pm 0.00}$ & +7.0 \\
+   & S-Ref & 15,055 & 21.3$_{\pm 1.14}$ & 28.5$_{\pm 1.26}$ & +7.3 \\
+   & CD & 8,211 & 22.5$_{\pm 0.55}$ & 30.1$_{\pm 0.50}$ & +7.6 \\
+   & DoLa & 15,968 & 22.1$_{\pm 0.60}$ & 29.1$_{\pm 0.58}$ & +7.0 \\
+   & Nudge & 7,902 & 22.7$_{\pm 1.40}$ & 31.1$_{\pm 0.91}$ & \textbf{+8.4} \\
+   & ActLCD & 16,038 & 23.3$_{\pm 0.71}$ & 30.2$_{\pm 0.79}$ & +6.9 \\
+  \midrule
+
+  \multirow{7}{*}{Ruby} & Vanilla & 14,275 & 32.7$_{\pm 0.89}$ & 34.9$_{\pm 0.96}$ & +2.3 \\
+   & Greedy & 13,760 & 32.3$_{\pm 0.00}$ & 34.6$_{\pm 0.00}$ & +2.4 \\
+   & S-Ref & 13,746 & 32.4$_{\pm 0.29}$ & 34.7$_{\pm 0.32}$ & +2.3 \\
+   & CD & 5,682 & 37.9$_{\pm 0.53}$ & 40.4$_{\pm 0.58}$ & \textbf{+2.5} \\
+   & DoLa & 14,308 & 34.4$_{\pm 0.39}$ & 36.8$_{\pm 0.38}$ & +2.4 \\
+   & Nudge & 6,925 & 34.2$_{\pm 0.87}$ & 36.6$_{\pm 1.09}$ & +2.4 \\
+   & ActLCD & 13,823 & 34.3$_{\pm 0.21}$ & 36.6$_{\pm 0.20}$ & +2.4 \\
+  \midrule
+
+\end{longtable}

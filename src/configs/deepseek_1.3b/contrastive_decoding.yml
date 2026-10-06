@@ -1,0 +1,9 @@
+enabled: false
+max_new_tokens: 128
+batch_size: 4
+# Paired strategy: this model is the expert.
+# expert_model must equal this model's alias — validated at startup.
+expert_model: deepseek_6.7b
+amateur_model: deepseek_1.3b  # must be a known alias
+alpha: 0.1
+repetition_penalty: 1.0

@@ -1,0 +1,6 @@
+enabled: false
+max_new_tokens: 128
+batch_size: 4
+k: 5
+retriever: sentence-transformers/all-MiniLM-L6-v2
+rag_dir: rag

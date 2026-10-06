@@ -1,0 +1,45 @@
+# ---- Large generated / downloaded artifacts (regenerable; keep out of git) ----
+# BigQuery dumps + full registry package-name lists (914MB, 82MB, 3x ~50MB)
+src/data/
+# Model generation outputs: 1647 files, 1.5GB
+src/output/
+# Source archive
+src.zip
+*.zip
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Environment / secrets ----
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.yml
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# ---- Logs & temp ----
+*.log
+tmp/
+scratch/
+slurm-*.out
+
+# ---- Session notes ----
+progress.md
